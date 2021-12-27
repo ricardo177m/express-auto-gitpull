@@ -19,13 +19,17 @@ router.post("/", async (req, res) => {
     });
   }
 
-  if (repo.secret !== undefined && req.body.config.secret !== repo.secret) {
-    console.log("[!] Invalid secret.");
-    return res.status(400).json({
-      message: "Invalid secret.",
-      success: false,
-    });
-  }
+  // if (
+  //   repo.secret !== undefined &&
+  //   req.body.config.secret === undefined &&
+  //   req.body.config.secret !== repo.secret
+  // ) {
+  //   console.log("[!] Invalid secret.");
+  //   return res.status(400).json({
+  //     message: "Invalid secret.",
+  //     success: false,
+  //   });
+  // }
 
   const isWritable = await canWrite(repo.path);
 
@@ -42,7 +46,7 @@ router.post("/", async (req, res) => {
     (error, stdout, stderr) => {
       if (error) {
         console.log(error.message);
-        res.status(500).json({
+        return res.status(500).json({
           message: "Internal Server Error",
           success: false,
         });
@@ -50,7 +54,7 @@ router.post("/", async (req, res) => {
 
       if (stderr) {
         console.log(stderr);
-        res.status(500).json({
+        return res.status(500).json({
           message: "Internal Server Error",
           success: false,
         });

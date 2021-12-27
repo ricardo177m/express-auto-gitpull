@@ -4,8 +4,7 @@ const CONFIG = {
   repos: [
     {
       repoFullName: "rmoreiradev/test-auto-pull",
-      path: "/var/www/web.rmeev.tech/html/test-auto-pull",
-      secret: "eQZ93Oly5KRFFaUU",
+      path: "/var/www/web.rmeev.tech/html/test-auto-pull"
     },
   ],
 };
