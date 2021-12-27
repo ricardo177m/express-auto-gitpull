@@ -8,4 +8,4 @@ const canWrite = (path, callback) => {
   });
 };
 
-module.exports = canWrite;
+module.exports = { canWrite };
