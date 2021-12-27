@@ -16,3 +16,7 @@ Small API to automatically pull my git repositories from GitHub on a linux machi
 - Install dependencies at least once
 - Copy `pm2-process.json` to your project and change the name
 - On the project folder, run `pm2 start pm2-process.json`
+
+## TODO
+
+- [] Protect with secret

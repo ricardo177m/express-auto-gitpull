@@ -6,6 +6,10 @@ const CONFIG = {
       repoFullName: "rmoreiradev/test-auto-pull",
       path: "/var/www/web.rmeev.tech/html/test-auto-pull"
     },
+    {
+      repoFullName: "rmoreiradev/express-auto-gitpull",
+      path: "/var/www/pull.rmeev.tech/api"
+    },
   ],
 };
 
