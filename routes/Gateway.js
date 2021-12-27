@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { config } = require("../config/config");
-const { canWrite } = require("utils");
+const { canWrite } = require("../utils/utils");
 const { exec } = require("child_process");
 
 router.post("/", async (req, res) => {

@@ -1,0 +1,9 @@
+{
+  "script": "start",
+  "watch": true,
+  "ignore_watch": ["package-lock.json", "node_modules", "log"],
+  "watch_options": {
+      "followSymlinks": false
+  },
+  "name": "AutoGitPull"
+}
