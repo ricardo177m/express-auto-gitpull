@@ -1,0 +1,37 @@
+{
+  "name": "express-auto-gitpull",
+  "version": "1.0.0",
+  "description": "Automatically pull git repositories from GitHub.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm i && node server.js",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmoreiradev/express-auto-gitpull.git"
+  },
+  "author": "rmoreiradev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rmoreiradev/express-auto-gitpull/issues"
+  },
+  "homepage": "https://github.com/rmoreiradev/express-auto-gitpull#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "helmet": "^4.6.0",
+    "http": "^0.0.1-security",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/knex": "^0.16.1",
+    "@types/node": "^17.0.5",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  }
+}
