@@ -10,6 +10,14 @@ const CONFIG = {
       repoFullName: "rmoreiradev/express-auto-gitpull",
       path: "/var/www/pull.rmeev.tech/api"
     },
+    {
+      repoFullName: "faceitreputation/faceitreputation-api",
+      path: "/var/www/api-faceit-reputation.rmeev.tech/api"
+    },
+    {
+      repoFullName: "faceitreputation/faceit_proxy",
+      path: "/var/www/faceitproxy.rmeev.tech/api"
+    },
   ],
 };
 
