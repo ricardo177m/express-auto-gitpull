@@ -20,4 +20,4 @@ Small API to automatically pull my git repositories from GitHub on a linux machi
 
 ## TODO
 
-- [] Protect with secret
+- [ ] Protect with secret
