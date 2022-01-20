@@ -16,6 +16,7 @@ Small API to automatically pull my git repositories from GitHub on a linux machi
 - Install dependencies at least once
 - Run `git branch --set-upstream-to=origin/<BRANCH> <BRANCH>` where `<BRANCH>` is the name of the branch you want to update from
 - Copy `pm2-process.json` to your project and change the name of the process
+- Register the repository on the `config.json` file and pull
 - On the project folder, run `pm2 start pm2-process.json`
 
 ## TODO
