@@ -19,18 +19,6 @@ router.post("/", async (req, res) => {
     });
   }
 
-  // if (
-  //   repo.secret !== undefined &&
-  //   req.body.config.secret === undefined &&
-  //   req.body.config.secret !== repo.secret
-  // ) {
-  //   console.log("[!] Invalid secret.");
-  //   return res.status(400).json({
-  //     message: "Invalid secret.",
-  //     success: false,
-  //   });
-  // }
-
   const isWritable = await canWrite(repo.path);
 
   if (!isWritable) {
